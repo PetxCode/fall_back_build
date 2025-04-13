@@ -841,7 +841,7 @@ export const createGradeScore = async (
   data: {}
 ) => {
   try {
-    const URL = "http://localhost:2244/api";
+    // const URL = "http://localhost:2244/api";
     return await axios
       .post(`${URL}/create-report-card/${teacherID}/${studentID}`, data)
       .then((res: any) => {
@@ -899,7 +899,7 @@ export const reportCardRemark = async (
   data: any
 ) => {
   try {
-    const URL = "http://localhost:2244/api";
+    // const URL = "http://localhost:2244/api";
     return await axios
       .patch(`${URL}/teacher-report-card/${teacherID}/${studentID}`, data)
       .then((res: any) => {
@@ -945,7 +945,7 @@ export const psychoReportCardRemark = async (
   data: any
 ) => {
   try {
-    const URL = "http://localhost:2244/api";
+    // const URL = "http://localhost:2244/api";
     return await axios
       .patch(`${URL}/update-psycho-report/${teacherID}/${studentID}`, data)
 
